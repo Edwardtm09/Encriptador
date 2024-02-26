@@ -67,7 +67,7 @@ function encriptar(){
         let textoCifrado = texto
         .replace(/e/gi, "enter")
         .replace(/i/gi, "imes")
-        .replace(/a/gi, "ai")
+        .replace(/a/gi, "aie")
         .replace(/o/gi, "ober")
         .replace(/u/gi, "ufat");
 
@@ -161,7 +161,7 @@ var textoTextarea = document.getElementById('texto').value;
                         let textoCifrado = texto
                         .replace(/enter/gi, "e")
                         .replace(/imes/gi, "i")
-                        .replace(/ai/gi, "a")
+                        .replace(/aie/gi, "a")
                         .replace(/ober/gi, "o")
                         .replace(/ufat/gi, "u");
                 //<<<<<<------Fin desencriptar texto------->>>>>>>>>>>>>>>
