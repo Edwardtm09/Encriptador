@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Encriptador de texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+
+    <body>
+    <! --Contenedor principal-->
+        <div class="contenedor">
+
+            <! --Contenedor que hace referencia al lado izquierdo de la pantalla-->
+            <div class="izquierdo">
+
+                <! --Logo de la empresa -->
+                <header>
+                    <a href="index.html"><img src="LogoLogo.jpg" class="titulo-img"></a> 
+                </header>
+
+                    <! --Texto de entrada -->
+                    <textarea name="texto-encriptado" id="texto" cols="50" rows="40" placeholder="Ingrese el texto aqui" class="texto"></textarea>
+                
+                        <! --Contiene la parte inferior del lado izquierdo -->
+                            <div class="inferior">  
+                                <img src="caps-text.jpg" class="caps">
+                                    <! -- Contenedor de los botones-->
+                                    <div class="botones">
+                                        <input type="submit" value="Encriptar" class="btn-Encriptar" id="btn-Encriptar" onclick="btnEncriptar()">
+                                        <input type="submit" value="Desencriptar" class="btn-Desencriptar" 
+                                        id="btn-Desencriptar" onclick="btnDesencriptar()">
+                                    </div>
+                            </div>
+            <! --Fin contenedor izquierdo -->                
+            </div>    
+
+
+                <! --Inicio contenedor de lado derecho llamado pie -->
+                <div class="pie">
+
+                    <! --Imagen del lado derecho buscando texto -->
+                    <img src="Muñeco.png" class="img-pie" id="img-titulo">
+
+                        <! --Parrafo encima de textarea que espera el texto a encriptar -->
+                        <p id="parrafo">Ningun mensaje fue encontrado</p>
+
+                            <! -- Texto encriptado -->
+                            <textarea class="texto-desencripta" id="texto2" placeholder="Ingresa el texto que desees encriptar o desencriptar"></textarea> 
+
+                                <! -- Boton de copiar que se activa al encriptar texto -->
+                                <input type="submit" value="Copiar" class="btn-copiar" id="btn-copiar" 
+                                style="display: none;" onclick="copiarTexto()">
+
+                <! --Fin contenedor izquierdo llamado pie -->    
+                </div>
+
+    <! -- FIN CONTENEDOR PRINCIPAL -->        
+    </div>    
+</body>
+</html>

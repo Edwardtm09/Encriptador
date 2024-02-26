@@ -1,0 +1,728 @@
+
+/* Estilo para el cuerpo de la pagina*/
+body{
+    background: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+         
+}
+
+/* Estilo para el contenedor principal*/
+.contenedor{
+    display: inline-block;
+    position: relative;
+    display: flex;
+}
+
+/*Estilos para el encabezado */
+header{
+    display: inline-block;
+    padding: 50px 0 0 50px;
+    vertical-align: top;
+}
+
+/*Estilos para el titulo de la imagen */
+.titulo-img{
+    vertical-align: bottom;
+    margin: 0 0 0 10px;
+}
+/* Estilo para el area de texto*/
+#texto{
+    /* Estilos de posicionamiento y dimensiones */
+    margin: 15% 30% 0 4%;
+    width: 30%;
+    height: 18em;
+    border-radius: 1em;
+    outline: none;
+    resize: none;
+
+    /* Estilos de apariencia */
+    font-size: 20px;
+    border: none;
+    padding: 3px;
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;   
+}
+
+/* Estilos despues del texto */
+#texto::after{
+    text-transform: lowercase;
+}
+
+/*Estilos para el marcador de posicion del texto */
+.texto::placeholder{
+    color: #0A3871;
+}
+
+/* Estilo para parrafo no mayusculas */
+.caps{
+    margin: 0 0 0 20%;
+}
+
+/* Estilos para la seleccion infeior */
+.inferior{
+
+display: inline-block;
+width: 1080px;
+}
+
+/* Estilos para los botones */
+.botones{
+    margin: 10px 0 0 20%;
+
+}
+/* Estilos para el boton encriptar */
+.btn-Encriptar{
+    /* Estilos de apariencia */
+    padding: 20px 140px;
+    color: white;
+    font-size: 15px;
+    background: #072b61;
+    border-radius: 25px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 2px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos al posicionar mouse sobre boton encriptar */
+.btn-Encriptar:hover{
+    background: #0c4fb3;
+}
+
+
+/* Estilos para el boton desencriptar */
+.btn-Desencriptar{
+    /* Estilos de apariencia */
+    padding: 20px 130px;
+    font-size: 15px;
+    color: #0A3871;
+    border-radius: 25px;
+    background: #ced4d4;
+    border-color: #0A3871;
+    transition: 1s all;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Estilos al posicionar mouse sobre boton desencriptar */
+.btn-Desencriptar:hover{
+    background: #8f9393;
+}
+
+/* Estilos para el texto encriptado */
+.texto-encriptado{
+    vertical-align: top;
+
+}
+/* Estilos para la seccion izquierda */
+.izquierdo{
+    display: inline-block;
+    width: 68%;
+  
+}
+
+/* Estilos para la seccion derecha llamada pie */
+.pie{
+    display: inline-block;
+    vertical-align: top;
+    margin: 55px 0 0 18px;
+    border-radius: 1em;
+    width: 20%;
+    border-radius: 2em;
+    background: #91a1d5;
+    padding: 40px ;
+    box-shadow:  5px 5px 10px  rgb(0, 0, 0, 0.3);
+
+    
+}
+/* Estilos para el texto desencriptado */
+.texto-desencripta{
+    display: inline;
+    height: 167px;
+    width: 98%;
+    outline: none;
+    resize: none;
+    background: #91a1d5;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+  
+/* Estilos para el marcador de posicion del texto desencriptado */
+.texto-desencripta::placeholder{
+        color: white;
+    }
+
+/* Estilos para la imagen del lado derecho pie */
+.img-pie{
+       
+        width: 200px;
+        height: 205px;
+        margin: 20px 0 0 30px;
+    }
+/* Estilos para el parrafo */
+#parrafo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    }
+/* Estilos para el boton copiar */
+.btn-copiar{
+    padding: 20px 130px;
+    font-size: 15px;
+    color: #0A3871;
+    border-radius: 25px;
+    background: #ced4d4;
+    border-color: #0A3871;
+    transition: 1s all;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* Efecto al seleccionar boton copiar */
+.btn-copiar:hover{
+    background: #8f9393;
+}
+/*------------------------------------FIN ESTILOS PARA COMPUTADORA---------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------CONTENIDO PARA TABLET(VERTICAL)------------------------------------------------*/
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    
+    /* Estilos para el cuerpo de la pagina */
+    .contenedor{
+        width: 100%;
+        position: flex;
+        flex-direction: column;
+        margin: 0 0 35px 0;
+    }
+
+    /* Estilos para el contenedor superior */
+    .izquierdo{
+        width: 100%;
+    }
+    /* Estilos para el logo */
+    .izquierdo header{
+        padding:20px 0 0 10px ;
+    }
+
+    /* Estilos para el texto encriptar */
+    #texto{
+        margin: 75px 0 0 4%;
+        width: 90%;
+        height: 25em;
+        font-size: 30px;
+    }
+
+    /* Estilos para contenedor inferior */
+    .inferior{
+        width: 100%;
+    }
+
+    /* Estilos para el aviso mayusculas */
+    .inferior .caps{
+        margin: 0 0 0 12%;
+    }
+
+    /* Estilos para el contenedor de los botones */
+    .botones{
+        margin: 10px 0 0 12%;
+    }
+
+    /* Estilos para el boton encriptar */
+    #btn-Encriptar{
+        margin: 0 0 1em 0;
+
+    }
+
+    /* Estilos para el boton desencriptar */
+    #btn-Desencriptar{
+        padding: 20px 125px;
+    }
+
+    /* Estilos para ocultar la imagen */
+    .img-pie{
+        display: none;
+    }
+
+    /* Estilos para el contenedor inferior */
+    .pie{
+        width: 93%;
+        padding: 0%;
+        margin: 55px 0 5px 35px;
+        background: #FFFAFA;
+    }
+
+    /* Estilos para ocultar el parrafo  */
+    #parrafo{
+        margin: 6px 0 0 15px;
+    }
+
+    /* Estilos para el textarea inferior */
+    #texto2{
+        margin: 4px 0 0 9px;
+        border-radius: 1em;
+        padding: 8px;
+        width: 95%;
+        height: 139px;
+        background: #FFFAFA;
+
+    }
+
+    /* Estilos para el textarea inferior */
+    .texto-desencripta{
+        padding: 15px;
+        height: 95px;
+        background: #FFFAFA;
+        color: #0A3871;
+    }
+
+    /* Estilos para el marcador de posicion del textarea */
+    .texto-desencripta::placeholder{
+        color: #0A3871;
+    }
+
+    /* Estilos para el boton copiar */
+    #btn-copiar{
+        margin: 0 0 17px 33%;
+    }
+
+}
+    
+/*------------------------------------FIN ESTILOS PARA TABLET (VERTICAL)---------------------------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------------PANTALLA DE LADO TABLET(HORIZONTAL)--------------------------------------------------*/
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation: landscape) {
+    
+/* Estilos para el cuerpo de la pagina */  
+body{
+    background: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        
+    
+}
+
+/* Estilos para el contenedor de la pagina */
+.contenedor{
+    display: inline-block;
+    position: relative;
+
+    
+}
+
+/* Estilos para el logo de la empresa */
+header{
+    display: inline-block;
+    padding: 50px 0 0 50px;
+    vertical-align: top;
+}
+
+/* Estilos para la imagen del logo */
+.titulo-img{
+    vertical-align: bottom;
+    margin: 0 0 0 10px;
+}
+
+/* Estilos para el textarea del texto a encriptar */
+#texto{
+    margin: 15% 30% 0 4%;
+    width: 30%;
+    height: 18em;
+    border-radius: 1em;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    border: none;
+    padding: 3px;
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+/* Estilos para el texto este en minuscula */
+#texto::after{
+    text-transform: lowercase;
+}
+
+/* Estilos para el texto del placeholder  */
+.texto::placeholder{
+    color: #0A3871;
+}
+
+/* Estilos para el aviso */
+.caps{
+    margin: 0 0 0 10%;
+}
+
+/* Estilos para el contenedor izquierdo */
+.inferior{
+
+display: inline-block;
+width: 1080px;
+}
+
+/* Estilos para el contenedor de botones */
+.botones{
+    margin: 10px 0 0 10%;
+
+}
+
+/* Estilos para el boton encriptar */
+.btn-Encriptar{
+    padding: 20px 140px;
+    color: white;
+    font-size: 15px;
+    background: #072b61;
+    border-radius: 25px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 2px 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para el boton Encriptar al sobreponer el mouse */
+.btn-Encriptar:hover{
+    background: #0c4fb3;
+}
+
+
+/* Estilos para el boton desencriptar  */
+.btn-Desencriptar{
+    padding: 20px 130px;
+    font-size: 15px;
+    color: #0A3871;
+    border-radius: 25px;
+    background: #ced4d4;
+    border-color: #0A3871;
+    transition: 1s all;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para el boton desencriptar al sobreponer mouse */
+.btn-Desencriptar:hover{
+    background: #8f9393;
+}
+
+/* Estilos para el texto a encriptar */
+.texto-encriptado{
+    vertical-align: top;
+
+}
+
+/* Estilos para el contenedor izquierdo */
+.izquierdo{
+    display: inline-block;
+    width: 68%;
+  
+}
+
+
+/* Estilos para el contenedor derecho */
+.pie{
+    display: inline-block;
+    vertical-align: top;
+    margin: 55px 0 0 18px;
+    border-radius: 1em;
+    width: 20%;
+    border-radius: 2em;
+    background: #FFFAFA;
+    padding: 40px ;
+    box-shadow:  -5px 5px 5px 5px  rgb(0.3, 0.3, 0.3, 0.3);
+
+    
+}
+
+/* Estilos para el texto a desencriptar */
+ #texto2{
+        border-radius: 1em;
+        padding: 8px;
+        width: 95%;
+        height: 139px;
+        background: #FFFAFA;
+
+    }
+
+/* Estilos para el texto a desencriptar */    
+.texto-desencripta{
+    display: inline;
+    height: 167px;
+    width: 98%;
+    outline: none;
+    resize: none;
+    background: white;
+    border: none;
+    font-size: 20px;
+    color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+  
+/* Estilos para el marcador de posicion del textarea */
+.texto-desencripta::placeholder{
+        color: #0A3871;
+    }
+
+/* Estilos para la imagen del contenedor derecho */
+.img-pie{
+       
+        width: 200px;
+        height: 205px;
+        margin: 20px 0 0 30px;
+    }
+
+/* Estilos para el parrafo inferior a la imagen */
+#parrafo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    }
+
+/* Estilos para el boton copiar */
+.btn-copiar{
+    padding: 20px 10px;
+    font-size: 15px;
+    color: #0A3871;
+    border-radius: 25px;
+    background: #ced4d4;
+    border-color: #0A3871;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+    
+}
+
+/* Estilos la boton copiar al seleccionar el mouse */
+.btn-copiar:hover{
+    background: #8f9393;
+}
+}
+
+/*------------------------------------FIN ESTILOS PARA TABLET (HORIZONTAL)---------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------------------CONTENIDO PARA TELEFONO(VERTICAL)------------------------------------------------*/
+
+
+@media only screen and (max-width:768px) {
+
+    /* Estilos del contenedor principal */
+    .contenedor{
+        width: 100%;
+        flex-direction: column;
+        margin: 0 0 35px 0;
+    }
+
+    /* Estilos para el contenedor izquierdo */
+    .izquierdo{
+        width: 100%;
+    }
+
+    /* Estilos para la imagen del titulo */
+    .izquierdo header{
+        padding:10px 0 0 10px ;
+    }
+
+    /* Estilos para el texto a encriptar */
+    #texto{
+        margin: 75px 0 0 4%;
+        width: 90%;
+        height: 10em;
+        font-size: 30px;
+    }
+
+    /* Estilos para el contenedor inferior */
+    .inferior{
+        width: 100%;
+    }
+
+    /* Estilos para aviso mayusculas */
+    .inferior .caps{
+        margin: 0 0 0 20px;
+    }
+
+    /* Estilos para el contenedor de los botones */
+    .botones{
+        margin: 10px 0 0 8px;
+    }
+
+    /* Estilos para el boton encriptar */
+    #btn-Encriptar{
+        margin: 0 0 1em 0;
+
+    }
+
+    /* Estilos para el boton desencriptar */
+    #btn-Desencriptar{
+        padding: 20px 125px;
+    }
+
+    /* Estilos para ocultar  la imagen */
+    .img-pie{
+        display: none;
+    }
+
+    /* Estilos para el contenedor derecho */
+    .pie{
+        width: 83%;
+        padding: 5px 0 0 0px;
+        margin: 55px 0 0 35px;
+        background: #FFFAFA;
+    }
+
+    /* Estilos para ocultar el parrafo */
+    #parrafo{
+        margin: 4px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Estilos para el texto a desencriptar */
+    #texto2{
+        border-radius: 1em;
+        padding: 8px;
+        width: 95%;
+        height: 135px;
+        background: #FFFAFA;
+    }
+
+    /* Estilos para texto a desencriptar */
+     .texto-desencripta{
+        
+        color: #0A3871;
+    }
+
+    /* Estilos para textarea */
+   .texto-desencripta::placeholder{
+        color: #0A3871;
+    }
+
+    /* Estilos para el boton copiar */
+    #btn-copiar{
+        margin: 0 0 17px 4px;
+    }
+}
+
+/*------------------------------------FIN ESTILOS PARA TELEFONO (VERTICAL)---------------------------------------------------*/  
+
+
+
+
+
+
+
+
+/*---------------------------------CONTENIDO PARA TELEFONO(HORIZONTAL)-----------------------------------------------------*/
+@media only screen and (max-device-width:480px) and (orientation:landscape) {
+
+    /* Estilos para el contenedor principal */
+    .contenedor{
+        width: 100%;
+        flex-direction: column;
+        margin: 0 0 35px 0;
+    }
+
+    /* Estilos para el contenedor izquierdo */
+    .izquierdo{
+        width: 100%;
+    }
+
+    /* Estilos para la imagen del titulo */
+    .izquierdo header{
+        padding:10px 0 0 10px ;
+    }
+
+    /* Estilos para el texto a encriptar */
+    #texto{
+        margin: 75px 0 0 4%;
+        width: 90%;
+        height: 10em;
+        font-size: 30px;
+    }
+
+    /* Estilos para el contenedor inferior de botones  */
+    .inferior{
+        width: 100%;
+    }
+
+    /* Estilos para el aviso */
+    .inferior .caps{
+        margin: 0 0 0 20px;
+    }
+
+    /* Estilos para contenedor de botones */
+    .botones{
+        display: inline-block;
+        margin: 10px 0 0 8px;
+    }
+
+    /* Estilos para el boton encriptar */
+    #btn-Encriptar{
+        margin: 0 0 1em 0;
+
+    }
+
+    /* Estilos para el boton desencriptar */
+    #btn-Desencriptar{
+        padding: 20px 125px;
+    }
+
+    /* Estilos para ocultar la imagen  */
+    .img-pie{
+        display: none;
+    }
+
+    /* Estilos para el contenedor inferior */
+    .pie{
+        width: 83%;
+        padding: 0%;
+        margin: 55px 0 0 65px;
+    }
+
+    
+    /* Estilos para el texto desencriptado */
+    #texto2{
+        border-radius: 1em;
+        padding: 8px;
+        width: 95%;
+        height: 139px;
+    }
+
+    /* Estilos para el texto desencriptado */
+     .texto-desencripta{
+        height: 95px;
+    }
+
+    /* Estilos para el placeholder del textarea */
+    .texto-desencripta::placeholder{
+        color: #0A3871;
+    }
+
+    /* Estilos para el boton copiar */
+    #btn-copiar{
+        margin: 0 0 17px 150px;
+    }
+}
+
+
+
+/*---------------------------------------------- FIN DE ESTILOS---------------------------------------------->>>>>>>>> */
