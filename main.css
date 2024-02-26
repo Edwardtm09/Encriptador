@@ -41,12 +41,9 @@ header{
     padding: 3px;
     color: #0A3871;
     font-family: 'Montserrat', sans-serif;   
-}
-
-/* Estilos despues del texto */
-#texto::after{
     text-transform: lowercase;
 }
+
 
 /*Estilos para el marcador de posicion del texto */
 .texto::placeholder{
