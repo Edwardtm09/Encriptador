@@ -5,7 +5,7 @@
                 if (/[A-Záéíóúü]/.test(textarea.value)) {
 
             //<<------Si es asi presenta un mensaje y se reinicia el sistema------>>
-                    alert('Se ha detectado caracteres con acentos.');
+                    alert('Se ha detectado texto en mayuscula o con acentos.');
                     window.location.reload();
                     textarea.focus();
            }
